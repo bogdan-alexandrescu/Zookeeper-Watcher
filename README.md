@@ -56,3 +56,11 @@ def test_function(children, data):
 #### 0.1.1
 
 * Fixed some distribution packaging bug.
+
+#### 0.1.2
+
+* Fixed some logging errors.
+
+#### 0.1.3
+
+* Added custom logging.

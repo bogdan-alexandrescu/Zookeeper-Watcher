@@ -24,7 +24,6 @@
 """
 
 import json
-import sys
 import logging
 from functools import partial, wraps
 
@@ -34,7 +33,7 @@ from kazoo.exceptions import NoNodeError, KazooException, ConnectionClosedError
 
 __author__ = '@balex'
 __license__ = 'MIT'
-__version__ = '0.1.1'
+__version__ = '0.1.3'
 
 
 class ConnectionError(Exception): pass
@@ -50,9 +49,6 @@ def _ignore_closed(func):
     except ConnectionClosedError:
       pass
   return wrapper
-
-
-log = logging.getLogger(__name__)
 
 
 class Watch():
@@ -150,7 +146,8 @@ class Watch():
 class ZookeeperWatcher(KazooClient):
   """Extended Kazoo Client Class to include the new Watch class in the constructor"""
 
-  def __init__(self, *args, **kwargs):
-    super(ZookeeperWatcher, self).__init__(*args, **kwargs)
+  def __init__(self, hosts='127.0.0.1:2181', logger=None, *args, **kwargs):
+    super(ZookeeperWatcher, self).__init__(hosts=hosts, *args, **kwargs)
     self.Watch = partial(Watch, self)
     self.read_only = True
+    self.logger = logger or logging
