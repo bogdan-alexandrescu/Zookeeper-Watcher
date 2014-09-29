@@ -49,18 +49,19 @@ def test_function(children, data):
 
 ## Changelog
 
-#### 0.1.0
+#### 0.1.3
 
-* Initial release.
-
-#### 0.1.1
-
-* Fixed some distribution packaging bug.
+* Added custom logging.
 
 #### 0.1.2
 
 * Fixed some logging errors.
 
-#### 0.1.3
+#### 0.1.1
 
-* Added custom logging.
+* Fixed some distribution packaging bug.
+
+#### 0.1.0
+
+* Initial release.
+
