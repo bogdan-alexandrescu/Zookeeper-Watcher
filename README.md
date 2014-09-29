@@ -52,3 +52,7 @@ def test_function(children, data):
 #### 0.1.0
 
 * Initial release.
+
+#### 0.1.1
+
+* Fixed some distribution packaging bug.
