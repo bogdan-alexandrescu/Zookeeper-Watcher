@@ -33,7 +33,7 @@ from kazoo.exceptions import NoNodeError, KazooException, ConnectionClosedError
 
 __author__ = '@balex'
 __license__ = 'MIT'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 
 class ConnectionError(Exception): pass
@@ -130,7 +130,7 @@ class Watch():
         if result is False:
           self._stopped = True
       except Exception as exc:
-        log.exception(exc)
+        self._log.exception(exc)
         raise
 
   def _watcher(self, event):

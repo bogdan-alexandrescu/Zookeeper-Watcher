@@ -49,6 +49,10 @@ def test_function(children, data):
 
 ## Changelog
 
+#### 0.1.4
+
+* Fixed some logging bugs.
+
 #### 0.1.3
 
 * Added custom logging.
