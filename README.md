@@ -3,13 +3,13 @@
 Watches a designated node in Zookeeper for data or member changes. 
 Implements a Watch class which can be used as a decorator to trigger functions when changes are detected on a specified node in Zookeeper.
 
-[![Latest Version](https://pypip.in/version/Zookeeper-Watcher/badge.png)]
+[![Latest Version](https://img.shields.io/pypi/v/Zookeeper-Watcher.svg)]
 (https://pypi.python.org/pypi/Zookeeper-Watcher/)
-[![Downloads](https://pypip.in/download/Zookeeper-Watcher/badge.png)]
+[![Downloads](https://img.shields.io/pypi/dm/Zookeeper-Watcher.svg)]
 (https://pypi.python.org/pypi/Zookeeper-Watcher/)
-[![Download format](https://pypip.in/format/Zookeeper-Watcher/badge.png)]
+[![Download format](https://img.shields.io/pypi/format/Zookeeper-Watcher.svg)]
 (https://pypi.python.org/pypi/Zookeeper-Watcher/)
-[![License](https://pypip.in/license/Zookeeper-Watcher/badge.png)]
+[![License](https://img.shields.io/pypi/l/Zookeeper-Watcher.svg)]
 (https://pypi.python.org/pypi/Zookeeper-Watcher/)
 
 
